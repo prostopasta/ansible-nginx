@@ -1,0 +1,10 @@
+---
+- name: Install NGINX
+  hosts: all
+  remote_user: student
+  become: yes
+  gather_facts: no
+  tasks:
+    - name: Install NGINX
+      ansible.builtin.include_role:
+        name: nginx
