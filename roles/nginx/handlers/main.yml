@@ -4,11 +4,11 @@
     daemon_reload: true
 
 - name: (Handler) Start/reload NGINX
-  ansible.builtin.command: sleep infinity
-  # ansible.builtin.service:
-    # name: nginx
-    # state: reloaded
-    # enabled: true
+  #ansible.builtin.command: sleep infinity
+  ansible.builtin.service:
+    name: nginx
+    state: reloaded
+    enabled: true
   when:
     - nginx_start | bool
     - nginx_state != 'absent'

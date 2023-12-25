@@ -1,9 +1,9 @@
 ---
 - name: Install NGINX
   hosts: all
-  remote_user: student
+  remote_user: ansible
   become: yes
-  gather_facts: no
+  gather_facts: yes
   tasks:
     - name: Install NGINX
       ansible.builtin.include_role:

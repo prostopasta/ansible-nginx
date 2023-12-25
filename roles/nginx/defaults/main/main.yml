@@ -15,14 +15,14 @@ nginx_type: opensource
 # (Optional) Specify which version of NGINX you want to install.
 # Default is to install the latest release.
 # For NGINX Open Source you'll need to specify the relevant release like below (Ubuntu jammy example).
-nginx_version: "=1.25.2-111"
+nginx_version: "=1.25.3-*"
 # nginx_version: "=1.25.2-1~focal"
 # For NGINX Plus you'll need to specify the R* release like below (Ubuntu jammy example).
 # nginx_version: "=28-1~jammy"
 
 # Start NGINX service.
 # Default is true.
-nginx_start: false
+nginx_start: true
 
 # Specify whether you want to install NGINX, upgrade to the latest version, or remove NGINX.
 # Can be used with `nginx_version` to fine tune control which version of NGINX is installed/used on each playbook execution.

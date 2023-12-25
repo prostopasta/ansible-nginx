@@ -153,7 +153,7 @@ pcre_version: 10.42
 zlib_version: 1.2.13
 openssl_version: 3.0.7
 
-nginx_version: "=1.25.2-111"
+nginx_version: "=1.25.3-*"
 
 # Supported NGINX Open Source dynamic modules
 nginx_modules_list: [geoip, image-filter, njs, perl, xslt]
